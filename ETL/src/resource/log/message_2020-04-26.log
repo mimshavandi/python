@@ -1,0 +1,104 @@
+2020-04-26 21:07:16.120769 : Start process:  dgs_report
+2020-04-26 21:07:16.129310 : Process_date:  20190331
+2020-04-26 21:07:16.137344 : Truncating extract and transform tables
+2020-04-26 21:07:16.596757 : executing stored procedure: sp_truncate
+2020-04-26 21:07:16.596757 : Conclusion: MySQL connection is closed
+2020-04-26 21:07:16.612095 : Importing CSV for:  ['cstmr_ref_01', 'cstmr_ref_02', 'cstmr_ref_03', 'cstmr_rel_01', 'cstmr_rel_02', 'cstmr_rel_03', 'product']
+2020-04-26 21:07:16.734177 : Import csv2db key is:  cstmr_ref_01
+2020-04-26 21:07:16.734177 : Total number of imported rows is:  1513
+2020-04-26 21:07:16.734177 : MySQL connection is closed
+2020-04-26 21:07:16.749801 : Loading csv load key:  cstmr_ref_01
+2020-04-26 21:07:16.981463 : Import csv2db key is:  cstmr_ref_02
+2020-04-26 21:07:16.990929 : Total number of imported rows is:  2356
+2020-04-26 21:07:16.990929 : MySQL connection is closed
+2020-04-26 21:07:16.990929 : Loading csv load key:  cstmr_ref_02
+2020-04-26 21:07:17.335496 : Import csv2db key is:  cstmr_ref_03
+2020-04-26 21:07:17.345626 : Total number of imported rows is:  4515
+2020-04-26 21:07:17.345626 : MySQL connection is closed
+2020-04-26 21:07:17.355750 : Loading csv load key:  cstmr_ref_03
+2020-04-26 21:07:17.376068 : Import csv2db key is:  cstmr_rel_01
+2020-04-26 21:07:17.384136 : Total number of imported rows is:  93
+2020-04-26 21:07:17.386202 : MySQL connection is closed
+2020-04-26 21:07:17.396307 : Loading csv load key:  cstmr_rel_01
+2020-04-26 21:07:17.436690 : Import csv2db key is:  cstmr_rel_02
+2020-04-26 21:07:17.446804 : Total number of imported rows is:  743
+2020-04-26 21:07:17.446804 : MySQL connection is closed
+2020-04-26 21:07:17.456934 : Loading csv load key:  cstmr_rel_02
+2020-04-26 21:07:17.485246 : Import csv2db key is:  cstmr_rel_03
+2020-04-26 21:07:17.487318 : Total number of imported rows is:  46
+2020-04-26 21:07:17.487318 : MySQL connection is closed
+2020-04-26 21:07:17.497502 : Loading csv load key:  cstmr_rel_03
+2020-04-26 21:07:17.778701 : Import csv2db key is:  product
+2020-04-26 21:07:17.778701 : Total number of imported rows is:  5302
+2020-04-26 21:07:17.778701 : MySQL connection is closed
+2020-04-26 21:07:17.778701 : Loading csv load key:  product
+2020-04-26 21:07:17.794320 : Running stored procedures from the list
+2020-04-26 21:07:17.794320 : Conclusion: Failed to execute stored procedure: 1339 (20000): Case not found for CASE statement
+2020-04-26 21:07:17.809907 : Conclusion: MySQL connection is closed
+2020-04-26 21:07:17.816415 : Running:  sp_truncate  for date:  20190331
+2020-04-26 21:07:18.606812 : executing stored procedure: sp_e2t_customer_reference
+2020-04-26 21:07:18.614709 : Conclusion: MySQL connection is closed
+2020-04-26 21:07:18.614709 : Running:  sp_e2t_customer_reference  for date:  20190331
+2020-04-26 21:07:23.699490 : executing stored procedure: sp_t2p_customer_reference
+2020-04-26 21:07:23.711241 : Conclusion: MySQL connection is closed
+2020-04-26 21:07:23.711241 : Running:  sp_t2p_customer_reference  for date:  20190331
+2020-04-26 21:07:24.285068 : executing stored procedure: sp_e2t_customer_relation
+2020-04-26 21:07:24.300661 : Conclusion: MySQL connection is closed
+2020-04-26 21:07:24.300661 : Running:  sp_e2t_customer_relation  for date:  20190331
+2020-04-26 21:07:24.632585 : executing stored procedure: sp_t2p_customer_relation
+2020-04-26 21:07:24.639092 : Conclusion: MySQL connection is closed
+2020-04-26 21:07:24.639092 : Running:  sp_t2p_customer_relation  for date:  20190331
+2020-04-26 21:07:25.240676 : executing stored procedure: sp_e2t_party
+2020-04-26 21:07:25.248337 : Conclusion: MySQL connection is closed
+2020-04-26 21:07:25.248337 : Running:  sp_e2t_party  for date:  20190331
+2020-04-26 21:07:25.356907 : executing stored procedure: sp_t2p_party
+2020-04-26 21:07:25.356907 : Conclusion: MySQL connection is closed
+2020-04-26 21:07:25.372241 : Running:  sp_t2p_party  for date:  20190331
+2020-04-26 21:07:26.004880 : executing stored procedure: sp_e2t_bank_account
+2020-04-26 21:07:26.004880 : Conclusion: MySQL connection is closed
+2020-04-26 21:07:26.020453 : Running:  sp_e2t_bank_account  for date:  20190331
+2020-04-26 21:07:26.922286 : executing stored procedure: sp_t2p_bank_account
+2020-04-26 21:07:26.925750 : Conclusion: MySQL connection is closed
+2020-04-26 21:07:26.925750 : Running:  sp_t2p_bank_account  for date:  20190331
+2020-04-26 21:07:27.044435 : executing stored procedure: sp_p2r_bank_account_ownership
+2020-04-26 21:07:27.060101 : Conclusion: MySQL connection is closed
+2020-04-26 21:07:27.060101 : Running:  sp_p2r_bank_account_ownership  for date:  20190331
+2020-04-26 21:07:27.345270 : executing stored procedure: sp_p2r_bank_account
+2020-04-26 21:07:27.360935 : Conclusion: MySQL connection is closed
+2020-04-26 21:07:27.360935 : Running:  sp_p2r_bank_account  for date:  20190331
+2020-04-26 21:07:27.708208 : executing stored procedure: sp_p2r_natural_person
+2020-04-26 21:07:27.708208 : Conclusion: MySQL connection is closed
+2020-04-26 21:07:27.723866 : Running:  sp_p2r_natural_person  for date:  20190331
+2020-04-26 21:07:27.839773 : executing stored procedure: sp_p2r_non_natural_person
+2020-04-26 21:07:27.846281 : Conclusion: MySQL connection is closed
+2020-04-26 21:07:27.846281 : Running:  sp_p2r_non_natural_person  for date:  20190331
+2020-04-26 21:07:27.977650 : executing stored procedure: sp_p2r_party_role
+2020-04-26 21:07:27.983347 : Conclusion: MySQL connection is closed
+2020-04-26 21:07:27.983347 : Running:  sp_p2r_party_role  for date:  20190331
+2020-04-26 21:07:28.124736 : executing stored procedure: sp_p2r_party
+2020-04-26 21:07:28.124736 : Conclusion: MySQL connection is closed
+2020-04-26 21:07:28.140356 : Running:  sp_p2r_party  for date:  20190331
+2020-04-26 21:07:28.146863 : Validating reports from the validation list
+2020-04-26 21:07:28.162488 : executing validator stored procedure: sp_validator_dgs_report
+2020-04-26 21:07:28.162488 : Validation status:  OK
+2020-04-26 21:07:28.178112 : Conclusion: MySQL connection is closed
+2020-04-26 21:07:28.178112 : Exporting data to csv files
+2020-04-26 21:07:28.193732 : Export db2csv key is:  natural_person
+2020-04-26 21:07:28.209354 : Total number of Exported rows is:  4776
+2020-04-26 21:07:28.209354 : MySQL connection is closed
+2020-04-26 21:07:28.224976 : Export db2csv key is:  non_natural_person
+2020-04-26 21:07:28.240595 : Total number of Exported rows is:  65
+2020-04-26 21:07:28.247101 : MySQL connection is closed
+2020-04-26 21:07:28.262728 : Export db2csv key is:  party
+2020-04-26 21:07:28.262728 : Total number of Exported rows is:  211
+2020-04-26 21:07:28.262728 : MySQL connection is closed
+2020-04-26 21:07:28.278382 : Export db2csv key is:  party_role
+2020-04-26 21:07:28.294007 : Total number of Exported rows is:  852
+2020-04-26 21:07:28.294007 : MySQL connection is closed
+2020-04-26 21:07:28.309593 : Export db2csv key is:  bank_account_ownership
+2020-04-26 21:07:28.309593 : Total number of Exported rows is:  31
+2020-04-26 21:07:28.325213 : MySQL connection is closed
+2020-04-26 21:07:28.347341 : Export db2csv key is:  bank_account
+2020-04-26 21:07:28.347341 : Total number of Exported rows is:  1653
+2020-04-26 21:07:28.347341 : MySQL connection is closed
+2020-04-26 21:07:28.362967 : End of processing!
