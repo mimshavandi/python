@@ -1,0 +1,41 @@
+USE info_extract;
+
+DROP TABLE IF EXISTS info_extract.customer_reference_01_e;
+CREATE TABLE  info_extract.customer_reference_01_e (
+id                  			INT auto_increment,
+report_date					    VARCHAR(150),
+CUSTOMER_ID					    VARCHAR(150),
+party_birth_date				VARCHAR(150),
+customer_type					VARCHAR(150),
+type_of_person					VARCHAR(150),
+FullName        				VARCHAR(150),
+FIRSTNAME                       VARCHAR(150),
+LASTNAME					    VARCHAR(150),
+Initials					    VARCHAR(150),
+STREET					        VARCHAR(150),
+HOUSENUMBER					    VARCHAR(150),
+HOUSENUMBERADDITION				VARCHAR(150),
+CITY					        VARCHAR(150),
+POSTALCODE					    VARCHAR(150),
+ADDRESSLINE1					VARCHAR(150),
+ADDRESSLINE2					VARCHAR(150),
+COUNTRY					        VARCHAR(150),
+RESIDENCE					    VARCHAR(150),
+NATIONALITY					    VARCHAR(150),
+PLACEOFBIRTH					VARCHAR(150),
+COUNTRYOFBIRTH					VARCHAR(150),
+TELEPHONENUMBER					VARCHAR(150),
+MOBILEPHONE					    VARCHAR(150),
+EMAILADDRESS					VARCHAR(150),
+TITLE					        VARCHAR(150),
+legal_capacity					VARCHAR(150),
+national_id_type				VARCHAR(150),
+national_id_country				VARCHAR(150),
+national_id_number				VARCHAR(150),
+document_type					VARCHAR(150),
+document_country				VARCHAR(150),
+document_number					VARCHAR(150),
+insert_dtm           			TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+primary key(id)
+)
+;
