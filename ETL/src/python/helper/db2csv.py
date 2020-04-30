@@ -5,20 +5,24 @@ from python.helper.logger import write_log
 import shutil
 import os
 import fnmatch
+from python.setting import CSV_OUT_DIR, MY_SQL_DIR
+
+
+src_dir = MY_SQL_DIR
+dst_dir = CSV_OUT_DIR
 
 
 def db2csv(export_code):
     try:
         connection = db_connect("info_report")
         sql_select_Query = csv_dict[export_code]
+        sql_select_Query = sql_select_Query.replace('#PATH#',src_dir)
         cursor = connection.cursor()
         cursor.execute(sql_select_Query)
         connection.commit()
         write_log("Export db2csv key is: ", export_code)
         write_log("Total number of Exported rows is: ", cursor.rowcount)
 
-        src_dir = "C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/"
-        dst_dir = "C:/Users/mahdi/eclipse-workspace/GBI_PROJECT/src/resource/reports/"
         
         for root, dirnames, filenames in os.walk(src_dir):
             for filename in fnmatch.filter(filenames, '*.csv'):

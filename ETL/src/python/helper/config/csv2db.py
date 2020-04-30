@@ -1,7 +1,7 @@
 csv_dict = {
             'cstmr_ref_01' : r"""
                                 LOAD DATA LOCAL INFILE 
-                                'C:/Users/mahdi/eclipse-workspace/GBI_PROJECT/src/resource/csv/customer_01_reference.csv' 
+                                '#PATH#/customer_01_reference.csv' 
                                 INTO TABLE info_extract.customer_reference_01_e
                                 FIELDS TERMINATED BY ',' 
                                 ENCLOSED BY '"' 
@@ -17,7 +17,7 @@ csv_dict = {
 ,
             'cstmr_ref_02' : r"""
                                 LOAD DATA LOCAL INFILE 
-                                'C:/Users/mahdi/eclipse-workspace/GBI_PROJECT/src/resource/csv/customer_02_reference.csv'
+                                '#PATH#/customer_02_reference.csv'
                                 INTO TABLE info_extract.customer_reference_02_e
                                 FIELDS TERMINATED BY ',' 
                                 ENCLOSED BY '"' 
@@ -33,7 +33,7 @@ csv_dict = {
 ,
             'cstmr_ref_03' : r"""
                                 LOAD DATA LOCAL INFILE 
-                                'C:/Users/mahdi/eclipse-workspace/GBI_PROJECT/src/resource/csv/customer_03_reference.csv'
+                                '#PATH#/customer_03_reference.csv'
                                 INTO TABLE info_extract.customer_reference_03_e
                                 FIELDS TERMINATED BY ',' 
                                 ENCLOSED BY '"' 
@@ -49,7 +49,7 @@ csv_dict = {
 ,
             'cstmr_rel_01' : r"""
                                 LOAD DATA LOCAL INFILE 
-                                'C:/Users/mahdi/eclipse-workspace/GBI_PROJECT/src/resource/csv/customer_01_relation.csv'
+                                '#PATH#/customer_01_relation.csv'
                                 INTO TABLE info_extract.customer_relation_01_e
                                 FIELDS TERMINATED BY ',' 
                                 ENCLOSED BY '"' 
@@ -62,7 +62,7 @@ csv_dict = {
 ,
             'cstmr_rel_02' : r"""
                                 LOAD DATA LOCAL INFILE 
-                                'C:/Users/mahdi/eclipse-workspace/GBI_PROJECT/src/resource/csv/customer_02_relation.csv'
+                                '#PATH#/customer_02_relation.csv'
                                 INTO TABLE info_extract.customer_relation_02_e
                                 FIELDS TERMINATED BY ',' 
                                 ENCLOSED BY '"' 
@@ -75,7 +75,7 @@ csv_dict = {
 ,
             'cstmr_rel_03' : r"""
                                 LOAD DATA LOCAL INFILE 
-                                'C:/Users/mahdi/eclipse-workspace/GBI_PROJECT/src/resource/csv/customer_03_relation.csv'
+                                '#PATH#/customer_03_relation.csv'
                                 INTO TABLE info_extract.customer_relation_03_e
                                 FIELDS TERMINATED BY ',' 
                                 ENCLOSED BY '"' 
@@ -88,7 +88,7 @@ csv_dict = {
 ,
             'product'      : r"""
                                 LOAD DATA LOCAL INFILE 
-                                'C:/Users/mahdi/eclipse-workspace/GBI_PROJECT/src/resource/csv/product.csv'
+                                '#PATH#/product.csv'
                                 INTO TABLE info_extract.product_e
                                 FIELDS TERMINATED BY ',' 
                                 ENCLOSED BY '"' 
