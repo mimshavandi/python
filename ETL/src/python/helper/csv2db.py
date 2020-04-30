@@ -2,12 +2,14 @@ from mysql.connector import Error
 from python.helper.config.csv2db import *
 from python.helper.db import db_connect
 from python.helper.logger import write_log
-
+from python.setting import CSV_IN_DIR
 
 def csv2db(import_code):
     try:
         connection = db_connect("info_extract")
         sql_select_Query = csv_dict[import_code]
+        sql_select_Query = sql_select_Query.replace('#PATH#',CSV_IN_DIR )
+        print (sql_select_Query)
         cursor = connection.cursor()
         cursor.execute(sql_select_Query)
         connection.commit()
@@ -23,4 +25,4 @@ def csv2db(import_code):
 
 #test
 #for import_code in ['cstmr_rel_01','cstmr_rel_02','cstmr_rel_03']:
-#    csv2db(import_code)
+#csv2db('cstmr_ref_01')
