@@ -1,0 +1,14 @@
+ETL with Python and SQL:
+python playes the orchestrator role, python driver manage the whole process 
+while python helpers do the support functions such as CSV to DB transformation, 
+Running stored procedures, etc.
+SQL part consist of DDL for able definitions and stored procedures with temporary 
+tables technique which improve the performance of stored procedures.
+Quality control checks take place in the transformation phase when the clean data 
+and non clean data get separated and procedure moves the non clean data into QC tables
+where user can complete the data and in the custom columns set the action to G(Go),
+so n the next run the procedure will also import the corrected rows from QC tables.
+Data validation steps could be nsterted into data validation definition table and 
+the procedure will write the validation result and conclusion into validation result 
+table.
+Finally after validation process writes the reports into CSV files.
