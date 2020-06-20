@@ -1,2 +1,4 @@
 # python
 My Python Projects
+ETL is my cutom ETL tool built with python and SQL. Python plays the coordinator and operation manager while SQL is the core of data transformation. Solution uses three staging levels (extract, transform, production) and also a solution for handling the SCD data is presented in the solution. For each data flow a QC table is presented which will separate clean and non clean data, after data correction ETL will reprocess the cleaned data from QC tables. An audit table is presented for stored procedure by which it is possible to debug and monitor their performance. Python structure is consist of a driver which orchestrates the whole process and python helperes which manage different functionalities such as db connection, writing logs, running stored procedures, converting csv files into db table, etc.
+Python version used in this project is 3.8 and the database is mysql.
